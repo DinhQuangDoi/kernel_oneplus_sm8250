@@ -37,6 +37,8 @@
 extern bool susfs_is_current_ksu_domain(void);
 extern struct static_key_true susfs_is_sdcard_android_data_not_decrypted;
 
+#define CL_COPY_MNT_NS BIT(25) /* used by copy_mnt_ns() */
+
 #endif /* CONFIG_KSU_SUSFS_SUS_MOUNT */
 
 #ifdef CONFIG_OPLUS_SECURE_GUARD
