@@ -85,7 +85,7 @@ jobs:
     - name: Build kernel
       run: |
         make O=out ARCH=arm64 \
-          CC="ccache clang" CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu- vendor/kona_defconfig
+          CC="ccache clang" CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu- vendor/kona-perf_defconfig
 
         make O=out -j$(nproc --all) ARCH=arm64 \
           CC="ccache clang" CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-gnu-
